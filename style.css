@@ -1,0 +1,281 @@
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+
+/* container css */
+body {
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+main > .container {
+    width: 375px;
+    height: 520px;
+    border-radius: 30px;
+    box-shadow: 0px 50px 50px rgba( 0, 0, 0, 0.15 );
+}
+
+.container {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -ms-flex-direction: column; /* TWEENER - IE 10 */
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-main {
+    justify-content: center;
+}
+
+.container-category,
+.container-category-label,
+.container-category-outcome {
+    -ms-flex-direction: row; /* TWEENER - IE 10 */
+    flex-direction: row;
+}
+
+#result-container {
+    background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+}
+
+#average-container {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    justify-content: center;
+}
+
+#summary-container {
+    justify-content: space-evenly;
+}
+
+#summary-container > * {
+    align-self: stretch;
+    margin: 0 10%;
+}
+
+#category-container {
+    height: 55%;
+    justify-content: space-between;
+}
+
+.container-category {
+    padding: 0 5%;
+    border-radius: 10px;
+    align-self: stretch;
+    justify-content: space-between;
+    height: 55px;
+}
+
+.container-category > * {
+    width: 100px;
+    justify-content: flex-start;
+}
+
+.category-icon {
+    margin-right: 15%;
+}
+
+.container-category-outcome {
+    justify-content: flex-end;
+}
+
+.category-score {
+    margin-right: 7%;
+}
+
+#container-category0,
+#container-category1 {
+    background-color: hsl(0, 0%, 100%);
+}
+
+#container-category2,
+#container-category3 {
+    background-color: hsl(221, 100%, 96%);
+}
+
+.btn {
+    height: 55px;
+    border-radius: 55px;
+    background-color: hsl(224, 30%, 27%);
+    outline: none;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+}
+
+@media only screen and (min-width: 751px) {
+    .container-main {
+        flex-direction: row;
+    }
+
+    main > .container {
+        width: 375px;
+        height: 520px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .container-main {
+        flex-direction: column;
+    }
+
+    #result-container {
+        height: 45vh;
+    }
+
+    #summary-container {
+        height: 55vh;
+    }
+}
+
+/* text css */
+p, span, .btn {
+    font-family: 'Hanken Grotesk', sans-serif;
+    text-align: center;
+    font-size: 1.125em; /* 18px */
+}
+
+#label-result,
+#label-summary {
+    font-size: 1.4em;
+    font-weight: 500;
+    color: hsl(221, 100%, 96%);
+}
+
+#score-average {
+    font-size: 4em;
+    font-weight: 800;
+    color: hsl(0, 0%, 100%);
+}
+
+#total-average {
+    color: hsl(241, 100%, 89%);
+    font-weight: 700;
+}
+
+#score-level {
+    font-size: 2em;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+#score-statistics {
+    padding: 0 16%;
+    color: hsl(221, 100%, 96%);
+}
+
+#label-summary {
+    text-align: left;
+    color: hsl(224, 30%, 27%);
+}
+
+.container-category-label > span {
+    font-weight: 700;
+}
+
+#container-category-label0 > span {
+    color: hsl(0, 100%, 67%);
+}
+
+#container-category-label1 > span {
+    color: hsl(39, 100%, 56%);
+}
+
+#container-category-label2 > span {
+    color: hsl(166, 100%, 37%);
+}
+
+#container-category-label3 > span {
+    color: hsl(234, 85%, 45%);
+}
+
+.btn {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+/* not part of the challenge */
+.attribution {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+}
+
+.attribution > * {
+    font-size: 0.75em;
+    margin: 0 5px;
+}
+
+.rate {
+    display: inline-block;
+    width: 0.75em;
+    height: 0.75em;
+    background-color: rgb(155, 205, 238);
+    margin: 0 2px;
+    border-radius: 50%;
+}
+
+.rate-lit {
+    background-color: rgb(81, 140, 180);
+}
+
+.separator {
+    display: inline-block;
+    
+    border: solid 2px #597175;
+}
+
+@media only screen and (min-width: 881px) {
+    .text-cutter {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .text-cutter {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    .attribution {
+        flex-direction: row;
+    }
+
+    
+    .separator {
+        width: 0;
+        min-height: 15px;
+    }
+}
+
+@media only screen and (max-width: 704px) {
+    .attribution > * {
+        display: none;
+    }
+
+    #code-author {
+        display: flex;
+    }
+}

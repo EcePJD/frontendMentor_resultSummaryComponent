@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
+</head>
+<body>
+  <main class="container container-main">
+    <div class="container container-result" id="result-container">
+      <span id="label-result">Your Result</span>
+
+      <div class="container" id="average-container">
+        <span id="score-average">{{AverageScore}}</span>
+
+        <span id="total-average">of {{OverallTotal}}</span>
+      </div>
+
+      <div class="container" id="statistics-container">
+        <span id="score-level">Great</span>
+
+        <p id="score-statistics">You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    </div>
+
+    <div class="container" id="summary-container">
+      <span id="label-summary">Summary</span>
+
+      <div class="container" id="category-container"></div>
+
+      <button class="btn">Continue</button>
+    </div>
+  </main>
+  
+  <!-- not part of the challenge-->
+  <footer class="attribution  container-attribution">
+    <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</span>
+    
+    <div class="separator"></div>
+    
+    <a href="./design/desktop-design.jpg" target="_blank">Design Guide - Desktop</a>
+    
+    <div class="separator"></div>
+
+    <a href="./design/mobile-design.jpg" target="_blank">Design Guide - Mobile</a>
+    
+    <div class="separator"></div>
+    
+    <div class="rating">
+      <span>Difficulty: Newbie</span>
+      <br class="text-cutter">
+      <span>[</span>
+      <div class="rate rate-lit" id="rate-newbie"></div>
+      <div class="rate" id="rate-junior"></div>
+      <div class="rate" id="rate-intermediate"></div>
+      <div class="rate" id="rate-advanced"></div>
+      <div class="rate" id="rate-guro"></div>
+      <span>]</span>
+    </div>
+    
+    <div class="separator"></div>
+    
+    <span id="code-author">Coded by <a href="https://github.com/EcePJD">Patrick James O. De Leon</a>.</span>
+  </footer>
+</body>
+</html>
