@@ -143,7 +143,7 @@ main > .container {
 }
 
 /* text css */
-h6, p, span, .btn {
+h1, p, span, .btn {
     font-family: 'Hanken Grotesk', sans-serif;
     text-align: center;
     font-size: 1.125em; /* 18px */
