@@ -143,17 +143,19 @@ main > .container {
 }
 
 /* text css */
-p, span, .btn {
+h6, p, span, .btn {
     font-family: 'Hanken Grotesk', sans-serif;
     text-align: center;
     font-size: 1.125em; /* 18px */
+    font-weight: 500;
 }
 
 #label-result,
 #label-summary {
     font-size: 1.4em;
-    font-weight: 500;
     color: hsl(221, 100%, 96%);
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #score-average {
@@ -163,7 +165,7 @@ p, span, .btn {
 }
 
 #total-average {
-    color: hsl(241, 100%, 89%);
+    color: hsla(241, 100%, 89%, 50%);
     font-weight: 700;
 }
 
@@ -201,6 +203,10 @@ p, span, .btn {
 
 #container-category-label3 > span {
     color: hsl(234, 85%, 45%);
+}
+
+.category-total {
+    color: hsla(224, 30%, 27%, 50%);
 }
 
 .btn {
