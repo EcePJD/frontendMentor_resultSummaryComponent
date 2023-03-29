@@ -94,14 +94,20 @@ main > .container {
     margin-right: 7%;
 }
 
-#container-category0,
-#container-category1 {
-    background-color: hsl(0, 0%, 100%);
+#container-category0 {
+    background-color: hsla(0, 100%, 67%, 10%);
 }
 
-#container-category2,
+#container-category1 {
+    background-color: hsla(39, 100%, 56%, 10%);
+}
+
+#container-category2 {
+    background-color: hsla(166, 100%, 37%, 10%);;
+}
+
 #container-category3 {
-    background-color: hsl(221, 100%, 96%);
+    background-color: hsla(234, 85%, 45%, 10%);
 }
 
 .btn {
