@@ -123,6 +123,21 @@ main > .container {
     background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
 }
 
+@media only screen and (max-width: 750px) {
+    .container-main {
+        flex-direction: column;
+    }
+
+    #result-container {
+        height: 45vh;
+        border-radius: 0 0 30px 30px;
+    }
+
+    #summary-container {
+        height: 55vh;
+    }
+}
+
 @media only screen and (min-width: 751px) {
     .container-main {
         flex-direction: row;
@@ -132,19 +147,9 @@ main > .container {
         width: 375px;
         height: 520px;
     }
-}
-
-@media only screen and (max-width: 750px) {
-    .container-main {
-        flex-direction: column;
-    }
 
     #result-container {
-        height: 45vh;
-    }
-
-    #summary-container {
-        height: 55vh;
+        border-radius: 30px;
     }
 }
 
